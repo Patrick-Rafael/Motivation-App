@@ -1,5 +1,6 @@
 package com.example.motivation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.hide()
 
 
+        handleUserName()
+
+
         //CLick event
         binding.buttonNewPhrase.setOnClickListener { this }
 
@@ -29,9 +33,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if(view.id == R.id.button_new_phrase){
 
-
-
         }
 
+    }
+
+    fun handleUserName(){
+
+        val name = SecurityPreferences(this).getString("User_Name")
+        binding.textUserName.text = "Olá, $name!"
     }
 }
