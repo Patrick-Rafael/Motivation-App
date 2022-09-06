@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text_Phrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/corben"
@@ -35,21 +35,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_all"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_infinite" />
+            app:srcCompat="@drawable/ic_all_inclusive" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/image_happy"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_happyface" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/image_sun"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -78,7 +78,7 @@
         android:elevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/text_Phrase" />
 
     <TextView
         android:id="@+id/text_user_name"
